@@ -1,0 +1,52 @@
+body {
+  background: url("./images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0; /* Remove default margin */
+  padding: 0;
+}
+
+.score {
+  font-size: 24px;
+  margin-top: 10px;
+  position: relative;
+  place-content: bottom;
+  display: block;
+}
+
+.timer {
+  font-size: 24px;
+  margin-top: 10px;
+  position: relative;
+  place-content: bottom;
+  display: block;
+}
+
+#board {
+  width: 540px; /* 9 columns * 60px */
+  height: 540px; /* 9 rows * 60px */
+  background-color: lightblue;
+  border: 5px solid slategray;
+  border-radius: 10px;
+  margin: 20px auto; /* Center align the board */
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#board img {
+  width: 50px; /* Adjusted to leave space for margin */
+  height: 50px; /* Adjusted to leave space for margin */
+  margin: 5px; /* Added margin for padding between images */
+}
+
+#comments {
+  font-size: 20px;
+  margin-top: 10px; /* Adjust margin top as needed */
+  margin-bottom: 10px; /* Adjust margin bottom as needed */
+  color: yellow;
+  font-weight: bold; /* Make the text bold */
+  display: none;
+}
